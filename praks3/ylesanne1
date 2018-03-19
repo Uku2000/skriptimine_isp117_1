@@ -1,0 +1,13 @@
+#! /bin/bash
+#
+#skripti algus
+#
+echo -n "Today is "
+echo -n 'date %A' #võtab aja ja hakkab seda näitama
+echo -n " " 'date %B'
+echo -n " " 'date %X'
+echo " " 'date %Y'
+echo "calendar of 'date %B" "%Y' "
+echo "$(cal)"
+#
+#skripti lõpp
