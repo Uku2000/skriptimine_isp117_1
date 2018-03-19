@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#Skript, mis väljastab mitu päeva antud hetkel masin on tööl
+#
+#skripti algus
+#
+echo -n "$(hostname) at "
+echo -e 'uptime | cut -f1 -d","'
+#
+#skripti lõpp
