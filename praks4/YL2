@@ -1,0 +1,31 @@
+#! /bin/bash
+#
+#skriptimise algus
+#
+#kandiku pindala
+echo "Sisestage kandiku pikkus (cm)"
+read k_pikkus
+echo "Sisestage kandiku laius (cm)"
+read k_laius
+echo "sisestage kypsise pikkus (cm)"
+read ky_pikkus
+echo "sisestage kypsise laius (cm)"
+read ky_laius
+echo "Palju on toril kihte?"
+read ki_arv
+echo "Mitu kypsist on pakis?"
+read ky_arv
+#
+#kandiku pindala
+kandik=`expr $k_pikkus \* $k_laius`
+#kypsise pindala
+kypsis=`expr $ky_pikkus \* $ky_laius`
+#palju kypsist mahub kandiku peale yhes kihis - kandiku pindala jagatud kypsise pindala
+yhes_kihis=`expr $kandik \/ $kypsis`
+#pakkide arv
+pakke=`expr $ki_arv \* $ky_arv`
+#pakkide arv2
+pakke2=`expr $pakke \/ $ky_arv`
+echo "Poest tuleb osta $pakke2 pakki kypsist"
+#
+#skripti lõpp
