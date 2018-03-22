@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+#skriptimise algus
+#
+echo "Sisesta oma ees- ja perenimi"
+read eesnimi perenimi
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi"
+#
+#skriptimise lõpp
