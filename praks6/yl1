@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#SKRIPTI ALGUS
+#
+echo "Sisestage paarisarv: " 
+read arv
+if (( $arv % 2 == 0 ))
+then
+echo "See on paarisarv"
+else
+echo "See on paarituarv"
+fi
