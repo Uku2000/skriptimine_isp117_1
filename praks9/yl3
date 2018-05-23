@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#raami joonistamine
+read -p "sisesta ridade arv:" rida
+
+read -p "sisesta tärnide arv:" tarn
+for ((i = 1; i <=$rida; i++))
+do
+	echo -n "$i "
+	#kui on esimene rida
+	if [ $i -eq 1 -o $i -eq $rida ]; then
+	#tärnidest tulev rida
+	for ((j = 1; j<=$tarn; j++))
+	do
+		echo -n "*"
+#teised read
+	else
+		echo -n "*"
+		#tühik
+		for ((j = 2; j < $tarn;j++))
+			echo -n " "
+		done
+	echo -n " "
+	fi
+	echo
+done
+
